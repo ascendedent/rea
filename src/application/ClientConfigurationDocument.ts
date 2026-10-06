@@ -64,7 +64,13 @@ const parseDocument = (
   text: string,
   format: ClientConfigurationFormat,
 ): Record<string, unknown> => {
-  if (format === "toml") return objectSchema.parse(parseToml(text));
+  if (format === "toml") {
+    // smol-toml 1.9 accepts a leading BOM. Keep the previous rejection so a
+    // Codex config with a BOM is still reported as invalid instead of edited.
+    if (text.startsWith("\uFEFF"))
+      throw new SyntaxError("Invalid TOML document");
+    return objectSchema.parse(parseToml(text));
+  }
   const errors: ParseError[] = [];
   // Accept a UTF-8 BOM without shifting diagnostics or editing the original text.
   const jsonText = text.startsWith("\uFEFF") ? ` ${text.slice(1)}` : text;
