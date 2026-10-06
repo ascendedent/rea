@@ -1,5 +1,25 @@
 # Changelog
 
+## [4.1.1](https://github.com/morluto/rea/compare/rea-agents-4.1.0...rea-agents-4.1.1) (2026-10-06)
+
+
+### Bug Fixes
+
+* **mcp:** preserve exact guided prompt context ([#761](https://github.com/morluto/rea/issues/761)) ([66c26f2](https://github.com/morluto/rea/commit/66c26f280b1d494806ee182b52564166760f0ae2))
+* **reference:** retain partial imports for unreadable directories ([#766](https://github.com/morluto/rea/issues/766)) ([cffc548](https://github.com/morluto/rea/commit/cffc548cd3127c5db811f20db4816039846b3170))
+* **semantics:** isolate named function expression bindings ([#776](https://github.com/morluto/rea/issues/776)) ([ae81f64](https://github.com/morluto/rea/commit/ae81f64d2ad10e5cdbf8356819351c02480aee7a))
+* **semantics:** preserve direct promise ownership boundaries ([#758](https://github.com/morluto/rea/issues/758)) ([e1ca412](https://github.com/morluto/rea/commit/e1ca412757bb01be855a66bf72006e3becd497b6))
+* **semantics:** retain trailing rest argument flows ([#756](https://github.com/morluto/rea/issues/756)) ([4bfd803](https://github.com/morluto/rea/commit/4bfd8038be0a60c43a452bec15e23799a0b040c0))
+
+
+### Documentation
+
+* audit and improve localized readmes translations and wording ([00a6ac3](https://github.com/morluto/rea/commit/00a6ac3de99f432bd6dbb88148a2aab5f8d3d338))
+* clarify NativeAOT scope and regenerate conformance ledger ([c945931](https://github.com/morluto/rea/commit/c945931961cbd488163c6d92ef91336ed506942e))
+* fix stale IDA roadmap item, mermaid paths, toolchain wording ([d2aed17](https://github.com/morluto/rea/commit/d2aed172ab79d98ff4e62c14d8f34cc49c1d17b4))
+* move quick start up and mark skill install optional ([554e9b1](https://github.com/morluto/rea/commit/554e9b1612f7799c2bc7177eb1a9b04a0f27d2e9))
+* update release boundary to npm 4.1.0 with Windows native bundle ([69be514](https://github.com/morluto/rea/commit/69be514c67c8b2eb8b450355a9782d9237748fda))
+
 ## [4.1.0](https://github.com/morluto/rea/compare/rea-agents-4.0.1...rea-agents-4.1.0) (2026-10-06)
 
 
